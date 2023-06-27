@@ -1,0 +1,267 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer";
+import { Notes, Head } from "mdx-deck";
+import { oceanicNext, ultramin } from "@code-surfer/themes";
+import { Logo } from "./components/Logo";
+import { Kevin } from "./components/Kevin";
+import { Titles } from "./components/Titles";
+import { Profile } from "./components/Profile";
+import { Thanks } from "./components/Thanks";
+import { ReactCe } from "./components/ReactCe";
+import { Prefecth } from "./components/Prefecth";
+import { QRcode } from "./components/QRcode";
+import customTheme from "./custom-theme";
+import azul from "./images/azul.gif";
+import vermelho from "./images/vermelho.gif";
+import preto from "./images/preto.gif";
+import myStory from "./images/myStory.png";
+import StoryDocs from "./images/StoryDocs.png";
+import cicero from "./images/cicero.png";
+import meme2 from "./images/meme2.gif";
+
+export const theme = customTheme;
+
+<Head>
+  <title>Criando uma documentação com Storybook</title>
+</Head>
+
+<Prefecth />
+
+<Titles
+  text="Criando uma documentação interativa com Storybook"
+  color="#FF4785"
+  size={40}
+/>
+
+<Logo
+  size={300}
+  src="https://github.com/storybookjs.png"
+  isPulsing
+/>
+
+---
+
+<Kevin
+  size={300}
+  circle
+  qrCode="https://raw.githubusercontent.com/KevinDik/Presentations/main/packages/mdx_apresentation/kevincode.png"
+  sizeQrCode={250}
+/>
+
+<Notes>
+
+Sempre lembrar de que não vou resolver sua internet
+
+</Notes>
+
+---
+
+<Titles text="Agradecimentos" color="#FF4785" size={40} />
+
+<Thanks
+  abraao="https://github.com/AbraaoAlves.png"
+  gleidson="https://github.com/gleidsonteixeira.png"
+  ronier="https://github.com/ronierlima.png"
+/>
+
+---
+
+<Titles text="Agradecimentos" color="#FF4785" size={40} />
+
+<Thanks abraao={preto} gleidson={vermelho} ronier={azul} />
+
+---
+
+<Titles
+  text="Comunidade React Ceará"
+  color="#FF4785"
+  size={40}
+/>
+
+<ReactCe />
+
+---
+
+<Profile
+  circle
+  src="https://github.com/Digital-College-BR.png"
+/>
+
+<Titles text="Digital College" color="#FF4785" size={40} />
+
+---
+
+# Contextualizando
+
+<Titles
+  text="Pra que usar uma ferramenta de histórias??"
+  color="#FF4785"
+  size={30}
+/>
+
+<Titles
+  text="O Storybook é uma ferramenta opensource que prepara um ambiente de desenvolvimento para componentes de UI."
+  color="#ccc"
+  size={28}
+/>
+
+<Notes>
+
+ambiente isolado para você criar seus componentes.
+
+Se você cria diretamente no seu sistema, algum JavaScript ou CSS do sistema pode influenciá-lo.
+
+</Notes>
+
+---
+
+## Instalando o Storybook em seu projeto
+
+<Profile src="https://raw.githubusercontent.com/kevinDsousa/Presentations/main/packages/init_in_storybook/images/install.png" />
+
+---
+
+<Titles text="Pense nisso:" color="#FF4785" size={50} />
+
+<Titles
+  text="O cenário perfeito para gambiarras!"
+  color="#ccc"
+  size={40}
+/>
+
+<Titles text="Storybook" color="#FF4785" size={40} />
+
+<Profile src="https://raw.githubusercontent.com/kevinDsousa/Presentations/main/packages/init_in_storybook/images/meme.jpg" />
+
+---
+
+<Titles
+  text="Hora de mostrar no código"
+  color="#FF4785"
+  size={50}
+/>
+
+<Profile src="https://raw.githubusercontent.com/kevinDsousa/Presentations/main/packages/init_in_storybook/images/meme2.gif" />
+
+---
+
+<Titles text="Meu Storybook" color="#FF4785" size={50} />
+
+<QRcode
+  border="#FF4785"
+  circle
+  height={200}
+  src={myStory}
+  width={200}
+/>
+
+---
+
+<CodeSurferColumns themes={[oceanicNext, ultramin]}>
+
+<Step>
+
+```jsx showNumbers file="./examples/newStories/Profile.stories.js"
+
+```
+
+##### Criando o arquivo storie Profile.stories.js
+
+</Step>
+
+<Step>
+
+```jsx 1:12 showNumbers file="./examples/newStories/Profile.stories.js"
+
+```
+
+### Setando os imports e defaults
+
+</Step>
+
+<Step subtitle="Criando o primeiro Storie">
+
+```jsx 14:24 showNumbers file="./examples/newStories/Profile.stories.js"
+
+```
+
+<Profile
+  circle
+  height={200}
+  src="https://github.com/mikaelmonteirodev.png"
+  width={200}
+/>
+
+</Step>
+
+<Step subtitle="Definindo o segundo Storie">
+
+```jsx 26:32 showNumbers file="./examples/newStories/Profile.stories.js"
+
+```
+
+<Profile
+  circle
+  height={200}
+  src="https://github.com/joellacerda.png"
+  width={200}
+/>
+
+</Step>
+
+<Step subtitle="Criando terceiro Storie">
+
+```jsx 34:45 showNumbers file="./examples/newStories/Profile.stories.js"
+
+```
+
+<Profile
+  height={600}
+  src={cicero}
+  width={400}
+/>
+
+</Step>
+
+<Step>
+
+```jsx 48:58 showNumbers file="./examples/newStories/Profile.stories.js"
+
+```
+
+<Profile
+  height={200}
+  src={meme2}
+  width={400}
+/>
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<Titles
+  text="Documentação Storybook"
+  color="#ccc"
+  size={50}
+/>
+
+<QRcode
+  src={StoryDocs}
+  height={200}
+  width={200}
+  border="#FF4785"
+/>
+
+---
+
+<Kevin
+  size={300}
+  circle
+  qrCode="https://raw.githubusercontent.com/KevinDik/Presentations/main/packages/mdx_apresentation/kevincode.png"
+  sizeQrCode={250}
+/>

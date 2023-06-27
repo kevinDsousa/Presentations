@@ -1,0 +1,36 @@
+.reactContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    background-color: #ccc;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+.reactComponent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 700px;
+}
+
+.reactComponent img {
+    height: 100%;
+    width: 100%;
+}
+
+.cicero {
+    height: 505px;
+}
+
+.cicero img {
+    height: 100%;
+    width: 100%;
+}
+
+h2 {
+    font-size: 50px;
+}

@@ -1,0 +1,13 @@
+.styleThanks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.styleThanks div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+}
+

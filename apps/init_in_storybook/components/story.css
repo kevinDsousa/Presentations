@@ -1,0 +1,19 @@
+.logo {
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms, transform 800ms;
+  filter: drop-shadow(0 0 2em #FF4785);
+}
+
+.pulsing {
+  animation: logo-pulse 1s infinite alternate;
+}
+
+@keyframes logo-pulse {
+  from {
+    transform: scale(1.0);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
