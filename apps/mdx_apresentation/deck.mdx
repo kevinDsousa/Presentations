@@ -5,10 +5,19 @@ import { Prefecth } from './components/Prefecth'
 import { Profile } from './components/Profile';
 import { Board } from './components/Board';
 import { Titles } from './components/Titles';
-import { Kevin } from 'ui';
+import { Kevin } from './components/Kevin';
 import { ReactLogo } from './components/ReactLogo'
 import { AaronProfile } from './components/AaronProfile';
 import customTheme from "./customTheme";
+import kevincode from './kevincode.png'
+import codehike from './images/codehike.png'
+import codesurfer from './images/codesurfer.png'
+import docussaurus from './images/docussaurus.png'
+import gitnext from './images/gitnext.png'
+import mdxdeck from './images/mdxdeck.png'
+import next from './images/next.png'
+import story from './images/story.png'
+import webconainer from './images/webconainer.png'
 
 export const theme = nightOwl;
 
@@ -22,7 +31,7 @@ export const theme = nightOwl;
 
 ---
 
-<Kevin size={300} circle qrCode="https://raw.githubusercontent.com/kevinDsousa/Presentations/main/packages/mdx_apresentation/kevincode.png" sizeQrCode={300}/>
+<Kevin size={300} circle qrCode={kevincode} sizeQrCode={300}/>
 
 ---
 
@@ -64,7 +73,7 @@ export const theme = nightOwl;
 
 <Titles size={50} color="#ccc" text="O Menino da Internet: A História de Aaron Swartz" />
 
-<Profile src="https://raw.githubusercontent.com/kevinDsousa/Presentations/main/packages/mdx_apresentation/kevincode.png" size={400}/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qm4NRSa9T2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ---
 
@@ -327,7 +336,7 @@ Vercel -> Criação de sites estaticos
 
 ---
 
-<Profile src="https://raw.githubusercontent.com/kevinDsousa/Presentations/main/packages/mdx_apresentation/images/story.png" size={1000}/>
+<Profile src={story} size={1000}/>
 
 [Storybook](https://storybook.js.org/docs/react/writing-docs/mdx)
 
@@ -335,7 +344,7 @@ Vercel -> Criação de sites estaticos
 
 ---
 
-<Profile src="https://raw.githubusercontent.com/kevinDsousa/Presentations/main/packages/mdx_apresentation/images/next.png" size={1000}/>
+<Profile src={next} size={1000}/>
 
 [Vercel](https://nextjs.org/blog/markdown)
 
@@ -343,7 +352,7 @@ Vercel -> Criação de sites estaticos
 
 ---
 
-<Profile src="https://raw.githubusercontent.com/kevinDsousa/Presentations/main/packages/mdx_apresentation/images/docussaurus.png" size={1000}/>
+<Profile src={docussaurus} size={1000}/>
 
 [Docusaurus](https://github.com/facebook/docusaurus/issues/4029)
 
@@ -351,7 +360,7 @@ Vercel -> Criação de sites estaticos
 
 ---
 
-<Profile src="https://raw.githubusercontent.com/kevinDsousa/Presentations/main/packages/mdx_apresentation/images/gitnext.png" size={1000}/>
+<Profile src={gitnext} size={1000}/>
 
 [Github Code Blocks](https://blocks.githubnext.com/)
 
@@ -359,7 +368,7 @@ Vercel -> Criação de sites estaticos
 
 ---
 
-<Profile src="https://raw.githubusercontent.com/kevinDsousa/Presentations/main/packages/mdx_apresentation/images/webconainer.png" size={1000}/>
+<Profile src={webconainer} size={1000}/>
 
 [WebContainer](https://webcontainers.io/)
 
@@ -367,7 +376,7 @@ Vercel -> Criação de sites estaticos
 
 ---
 
-<Profile src="https://raw.githubusercontent.com/kevinDsousa/Presentations/main/packages/mdx_apresentation/images/codehike.png" size={1000}/>
+<Profile src={codehike} size={1000}/>
 
 [codehike](https://codehike.org/)
 
@@ -375,7 +384,7 @@ Vercel -> Criação de sites estaticos
 
 ---
 
-<Profile src="https://raw.githubusercontent.com/kevinDsousa/Presentations/main/packages/mdx_apresentation/images/mdxdeck.png" size={1000}/>
+<Profile src={mdxdeck} size={1000}/>
 
 [MDX Deck](https://github.com/jxnblk/mdx-deck)
 
@@ -383,7 +392,7 @@ Vercel -> Criação de sites estaticos
 
 ---
 
-<Profile src="https://raw.githubusercontent.com/kevinDsousa/Presentations/main/packages/mdx_apresentation/images/codesurfer.png" size={1000} />
+<Profile src={codesurfer} size={1000} />
 
 [codesurfer](https://codesurfer.pomb.us/)
 
@@ -407,4 +416,4 @@ Vercel -> Criação de sites estaticos
 
 ---
 
-<Kevin size={300} circle qrCode="https://raw.githubusercontent.com/kevinDsousa/Presentations/main/packages/mdx_apresentation/kevincode.png" sizeQrCode={300}/>
+<Kevin size={300} circle qrCode={kevincode} sizeQrCode={300}/>
